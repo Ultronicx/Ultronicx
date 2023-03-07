@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ULTRONICX </title>
+    <link href="css/careers-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="career-container">
+        <div class="close-icon">
+
+        </div>
+        <div class="head-holder">Open Positions</div>
+
+        <div class="career-list">
+
+            <!-- <div class="list-menu">All Positions</div> -->
+            <!-- <div class="list-menu">Engineering</div>
+
+            <div class="list-menu">Marketing</div> -->
+
+            <div class="grid-container">
+                <div class="grid-item" onclick="mobileTech()" id="open1">Mobile Technician</div>
+                <div class="vacancy-details-container" id="mobTech" style="display: none;">
+                    <div class="vacany-headings">No. of Vacancies:</div>
+                    <div class="vacancy-text-content"> 5</div>
+                    <div class="vacany-headings">Qualification Required:</div>
+                    <div class="vacancy-text-content">
+                        <ul>
+                            <li>
+                                Diploma in EEE, ECE, Computer Science
+                            </li>
+                            <li>
+                                BE (ECE)
+                            </li>
+                            <li>
+                                BSc (Electronics)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vacany-headings">Skills Required:</div>
+                    <div class="vacancy-text-content">
+                        <ul>
+                            <li>
+                                Mobile PCB debug
+                            </li>
+                            <li>
+                                PCB Rework
+                            </li>
+                            <li>
+                                L4 Rework
+                            </li>
+                            <li>
+                                LCD separating
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vacany-headings">Experience Required:</div>
+                    <div class="vacancy-text-content">
+                        <p>
+                            2-5 years
+                        </p>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary" onclick="getDetails()">Apply</button>
+                    </div>
+                </div>
+                <div class="enter-details" id="enterDetails" style="display: none;">
+                    <!-- Default form register -->
+                    <form class="container text-center border border-light p-5" action="#!">
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                        <!-- Password -->
+                        <!-- <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        At least 8 characters and 1 digit    </small> -->
+
+                        <!-- Phone number -->
+                        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4"> </small>
+                        <!-- <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div> -->
+                        <div class="form-group">
+                            <label class="custom-file">                        
+                            <input type="file" id="file" class="custom-file-input" >
+                            <span class="custom-file-control"></span>
+                            </label>
+                        </div>
+
+
+                        <!-- Default form register -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <div class="grid-item" onclick="softEng()" id="open2">Software Engineer</div>
+                <div class="vacancy-details-container" id="softEng" style="display: none;">
+                    <div class="vacany-headings">No. of Vacancies:</div>
+                    <div class="vacancy-text-content">
+                        5
+                    </div>
+                    <div class="vacany-headings">Qualification Required:</div>
+                    <div class="vacancy-text-content">
+                        <ul>
+                            <li>
+                                BE (ECE), CSE, IT
+                            </li>
+                            <li>
+                                Diploma in ECE, CSE, IT
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vacany-headings">Skills Required:</div>
+                    <div class="vacancy-text-content">
+                        <ul>
+                            <li>
+                                Embedded
+                            </li>
+                            <li>
+                                Eclipse
+                            </li>
+                            <li>
+                                JAVA
+                            </li>
+                            <li>
+                                Kit programming arduino
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vacany-headings">Experience Required:</div>
+                    <div class="vacancy-text-content">
+                        <p>
+                            1-3 years
+                        </p>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary" onclick="getDetails()">Apply</button>
+                    </div>
+                </div>
+
+
+                <div class="grid-item" onclick="designEng()" id="open3">Design Engineer</div>
+                <div class="vacancy-details-container" id="designEng" style="display: none;">
+                    <div class="vacany-headings">No. of Vacancies:</div>
+                    <div class="vacancy-text-content">
+                        2
+                    </div>
+                    <div class="vacany-headings">Qualification Required:</div>
+                    <div class="vacancy-text-content">
+                        <ul>
+                            <li>
+                                Diploma in Robotics
+                            </li>
+                            <li>
+                                Diploma in Mechatronics
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vacany-headings">Experience Required:</div>
+                    <div class="vacancy-text-content">
+                        <p>
+                            0-2 years
+                        </p>
+                    </div>
+                    <div class="apply-btn">
+                        <button type="button" class="btn btn-primary" onclick="getDetails()">Apply</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="inner-flex-container">
+                    <div class="inner-flex-item">No. of Vacancies:
+                    </div>
+                    <div class="inner-flex-item">Qualification Required:
+                        <div class="flex-text">Hi</div>
+                    </div>
+                    <div class="inner-flex-item">Skills Required:</div>
+                    <div class="inner-flex-item">Experience Required:</div>
+                   <div class="inner-flex-item">Software Engineer:</div>
+                </div> -->
+        </div>
+        <div class="close-btn">
+            <button type="button" class="btn btn-primary" onclick="closeCareers()">Close Careers</button>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    <script src="js/newfunction.js"></script>
+
+</body>
